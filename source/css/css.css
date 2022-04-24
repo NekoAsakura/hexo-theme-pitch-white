@@ -1,0 +1,20 @@
+#wsite-title {
+    font-family: "Open Sans" !important;
+    text-transform: uppercase !important;
+}
+
+.wsite-menu-default a {
+    font-family: "Open Sans" !important;
+}
+
+
+@media screen and (min-width: 767px) {
+
+    #wsite-title {
+        font-size: 22px !important;
+    }
+
+    .wsite-menu-default a {
+        font-size: 13px !important;
+    }
+}

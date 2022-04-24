@@ -1,0 +1,10 @@
+<a href="<%- item.path %>">
+    <%if (item.photos.length == 2){%>
+        <img src="<%- url_for(item.photos[1]) %>" alt="Picture" style="width:auto;max-width:100%">
+    <%} else {%>
+        <img src="<%- url_for(item.photos[0]) %>" alt="Picture" style="width:auto;max-width:100%">
+    <% } %>
+</a>
+<div style="display:block;font-size:90%">
+    <%- item.title %>
+</div>
