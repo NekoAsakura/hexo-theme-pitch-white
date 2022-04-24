@@ -1,0 +1,71 @@
+<!-- banner-wrap -->
+<div class="banner-wrap">
+    <div class="wsite-elements wsite-not-footer wsite-header-elements">
+        <div class="wsite-section-wrap">
+            <div class="wsite-section wsite-header-section wsite-section-bg-color"
+                style="height: auto;vertical-align: middle;background-color: #fff;background-image: none;">
+                <div class="wsite-section-content">
+                    <div class="container">
+                        <div class="banner">
+                            <div class="wsite-section-elements">
+                                <h2 class="wsite-content-title">
+                                    <font color="#2a2a2a" size="6">
+                                        <%= item.title %>
+                                    </font><br>
+                                </h2>
+                            </div>
+                        </div>
+                    </div><!-- end container -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content-wrap -->
+<div class="content-wrap">
+    <div id="wsite-content" class="wsite-elements wsite-not-footer">
+        <div class="wsite-section-wrap">
+            <div class="wsite-section wsite-body-section wsite-background-6">
+                <div class="wsite-section-content">
+                    <div class="container">
+                        <div class="wsite-section-elements">
+                            <div>
+                                <div class="wsite-multicol">
+                                    <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+                                        <table class="wsite-multicol-table">
+                                            <tbody class="wsite-multicol-tbody">
+                                                <tr class="wsite-multicol-tr">
+                                                    <td class="wsite-multicol-col"
+                                                        style="width:50%; padding:0 15px;">
+                                                        <div>
+                                                            <div class="wsite-image wsite-image-border-none "
+                                                                style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+                                                                <a>
+                                                                    <% if (item?.photos[1]) { %>
+                                                                        <img src="<%= url_for(item.photos[1]) %>"
+                                                                            style="width:auto;max-width:100%">
+                                                                    <% } %>
+                                                                </a>
+                                                                <div style="display:block;font-size:90%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="wsite-multicol-col"
+                                                        style="width:50%; padding:0 15px;">                                                
+                                                        <div class="paragraph">
+                                                            <%- page.content %>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
