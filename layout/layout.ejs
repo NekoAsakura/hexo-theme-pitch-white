@@ -18,9 +18,11 @@
     </div>
 </body>
 <script>
-    const cur_page = document.getElementById("/<%=page.title%> ").parentElement
+    const cur_page = document.getElementById("/<%=page.title%> ")
     const body = document.getElementsByClassName("body")
-    cur_page.setAttribute('id','active')
+    if (cur_page){
+        cur_page.parentElement.setAttribute('id','active')
+    }
     document.body.setAttribute('class','no-header-page  wsite-page-index wsite-theme-light')
 </script>
 </html>
