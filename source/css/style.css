@@ -242,6 +242,69 @@ tbody {
   border: none;
 }
 
+.wsite-bicol {
+  position: relative;
+  direction: ltr;
+}
+.wsite-bicol .wsite-bicol-col {
+  width: 50%;
+  padding: 0 15px;
+}
+.wsite-bicol .wsite-bicol-col img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.wsite-bicol-table-wrap {
+  margin: 0 -15px;
+}
+
+.wsite-bicol-table {
+  position: relative;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.detail-page .wsite-image {
+  max-width: none;
+  padding: 10px 0px;
+  text-align: center;
+}
+.detail-page .wsite-elements {
+  text-align: left;
+}
+.detail-page img {
+  max-height: none;
+  max-width: none;
+}
+
+.banner-wrap .container {
+  position: relative;
+  display: table;
+  overflow-y: hidden;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+.banner-wrap .banner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+}
+.banner-wrap .banner h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.wsite-header-section {
+  text-align: center;
+}
+
 .footer-wrap {
   width: 100%;
   background: #ffffff;
