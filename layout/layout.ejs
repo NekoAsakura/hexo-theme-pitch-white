@@ -1,25 +1,26 @@
 <html>
-
-<!-- Head tag -->
-<%- partial('_partial/head') %>
-
+    <%- partial('_partial/head') %>
 <body>
-
-    <div class="no-header-page  wsite-page-index wsite-theme-light"
-	style="min-height: 100%; position: relative; height: auto !important; padding-bottom: 62px !important; padding-top: 0px;">
-        <div class="wrapper">
-            <div class="cento-header">    
-                <!-- Menu -->
-                <%- partial('_partial/menu') %>
-            <div class="row">
-
-            <!-- Main Content -->
-            <div class="col-sm-8 blog-main">
+    <div class="wrapper">
+        <div class="header-wrap">
+            <%# Menu %>
+            <%- partial('_partial/header') %>
+        </div>
+        <div class="content-wrap">
+            <div id="wsite-content" class="wsite-elements">
+                <%# Main Content %>
                 <%- body %>
             </div>
-
+        </div>
+        <div class="footer-wrap">
+            <%- partial('_partial/footer') %>
         </div>
     </div>
 </body>
-
+<script>
+    const cur_page = document.getElementById("/<%=page.title%> ").parentElement
+    const body = document.getElementsByClassName("body")
+    cur_page.setAttribute('id','active')
+    document.body.setAttribute('class','no-header-page  wsite-page-index wsite-theme-light')
+</script>
 </html>

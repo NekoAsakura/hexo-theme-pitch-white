@@ -1,0 +1,17 @@
+<div class="wsite-multicol">
+    <div class="wsite-multicol-table-wrap">
+        <table class="wsite-multicol-table">
+            <tbody class="wsite-multicol-tbody">
+                <tr class="wsite-multicol-tr">
+                    <% page.posts.each(function(item){ %>
+                    <td class="wsite-multicol-col">                                                   
+                        <div class="wsite-image wsite-image-no-border">
+                            <%- partial('_partial/article-cover', {item: item}) %>    
+                        </div>
+                    </td>
+                    <% }); %>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

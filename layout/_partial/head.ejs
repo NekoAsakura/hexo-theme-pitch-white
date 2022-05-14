@@ -1,17 +1,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta name="description" content="">
+    <% if (theme?.description) { %>
+        <meta name="description" content="<%= url_for(theme.description)%>">
+    <% } %>
     <meta name="author" content="">
     <% if (theme?.favicon) { %>
         <link rel="icon" href="<%- url_for(theme.favicon)%>">
     <% } %>
     <title><%- config.title%></title>
-
-    <%- css('css/sites.css') %>
-    <%- css('css/main_style.css') %>
+    <%- css('css/style.css') %>
     <%- css('css/fonts.css') %>
-    <%- css('css/css.css') %>
-
 </head>
