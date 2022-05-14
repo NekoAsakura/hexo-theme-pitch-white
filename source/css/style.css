@@ -162,6 +162,13 @@ tbody {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .content-wrap {
   background: #ffffff;
 }
